@@ -13,3 +13,12 @@ docker-compose up -d
 ```sh
 cd cucumber-with-compose/app/features
 ```
+
+##### Example gherkin file
+
+![](https://raw.githubusercontent.com/macio-matheus/cucumber-with-compose/master/docs/example-scenario-syntax.png)
+
+
+##### TODO
+
+- Write new example scenarios
