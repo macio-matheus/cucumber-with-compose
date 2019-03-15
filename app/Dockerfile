@@ -50,14 +50,13 @@ RUN chown -R appium:appium /opt/appium
 
 #USER appium
 #ENV HOME /home/appium
-
 #RUN cd /opt/appium && npm install appium
 
 EXPOSE 4723
 CMD /opt/appium/node_modules/appium/bin/appium.js
 
-RUN mkdir /myapp
-WORKDIR /myapp
-ADD Gemfile /myapp/Gemfile
+RUN mkdir /app
+WORKDIR /app
+ADD Gemfile /app/Gemfile
 RUN bundle install
-ADD . /myapp
+ADD .. /app
