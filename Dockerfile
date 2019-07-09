@@ -46,9 +46,9 @@ RUN curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-ke
     rm -rf /var/lib/apt/lists/*
 
 
-RUN mkdir /opt/appium
-RUN useradd -m -s /bin/bash appium
-RUN chown -R appium:appium /opt/appium
+# RUN mkdir /opt/appium
+# RUN useradd -m -s /bin/bash appium
+# RUN chown -R appium:appium /opt/appium
 
 #USER appium
 #ENV HOME /home/appium
