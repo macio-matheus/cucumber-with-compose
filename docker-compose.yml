@@ -2,9 +2,10 @@ cucumber-phantomjs:
   build: .
   command: bundle exec cucumber -p poltergeist -f pretty
   volumes:
-    - ./app:/app
+    - .:/app
   ports:
     - "4777:4777"
+
 
 #cucumber-firefox:
 #  build: .

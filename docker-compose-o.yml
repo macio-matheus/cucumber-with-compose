@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+  cucumber-phantomjs:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    command: bundle exec cucumber -p poltergeist -f pretty
+    volumes:
+      - ./app:/app
+    ports:
+      - "4777:4777"
+
+#cucumber-firefox:
+#  build: .
+#  command: bundle exec cucumber -p browserstack -f pretty
+#  volumes:
+#    - ./app:/app
