@@ -71,7 +71,7 @@ GEM
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
-    rake (12.3.2)
+    rake (12.3.3)
     redcarpet (3.4.0)
     relish (0.7.1)
       archive-tar-minitar (>= 0.5.2)
