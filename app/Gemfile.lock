@@ -44,7 +44,7 @@ GEM
     mime-types (3.2.2)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2018.0812)
-    mini_portile (0.5.3)
+    mini_portile2 (2.8.0)
     minitar (0.8)
     minitar-cli (0.8)
       minitar (~> 0.8.0)
@@ -52,8 +52,9 @@ GEM
     multi_json (1.13.1)
     multi_test (0.1.2)
     netrc (0.11.0)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
+    nokogiri (1.13.9)
+      mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
     parallel (1.14.0)
     parallel_tests (2.28.0)
       parallel
@@ -67,6 +68,7 @@ GEM
       hashie (>= 1.1.0)
     powerpack (0.1.2)
     psych (3.1.0)
+    racc (1.6.0)
     rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -139,7 +141,7 @@ DEPENDENCIES
   cucumber
   cuke_sniffer
   json
-  nokogiri (= 1.6.1)
+  nokogiri (= 1.13.9)
   parallel_tests
   poltergeist
   rake
